@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#8946c8"
+    tools:context="avier.jesse.josh.lsu.tour.guide.application.csc3380.team23.project.MikeHabitatActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mikeHabitatLocation"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="148dp"
+            android:layout_height="138dp"
+            tools:context="avier.jesse.josh.lsu.tour.guide.application.csc3380.team23.project.SelectActivity" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mikeHabitatImage"
+        android:src="@drawable/mikehabitat"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/linearLayout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mike's Habitat"
+                android:textColor="#fdfd21"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The old enclosure for Mke the Tiger was only 2,000 square feet in size with minimal amenities. The new environment created for Mike is over 15,000 square feet in size with lush planting, a large Live Oak tree, a beautiful waterfall and a stream evolving from a rocky backdrop overflowing with plants and trees. The habitat has, as a backdrop, an Italianate tower, a campanile, that creates a visual bridge to the Italianate architectural vernacular that is the underpinning of the image of the entire beautiful LSU campus. This spectacular new habitat features state-of-the-art technologies, research, conservation and husbandry programs. It is, in essence, one of the largest and finest Tiger habitats in the United States."
+                android:textColor="#fdfd21"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-Mikethetiger.com"
+                android:textColor="#fdfd21"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Official site of the LSU Mascot"
+                android:textColor="#fdfd21"
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
